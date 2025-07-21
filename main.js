@@ -15,19 +15,25 @@ class Field {
 	constructor(field = [[]]) {
 		this.field = field;
 
-		// Replace with your own code //
-		// Set the home position at (0, 0) before the game starts
-		this.positionRow = 0;
-		this.positionCol = 0;
+		//---ตำแหน่งเริ่มต้น
+		this.positionRowX= 0;
+		this.positionColY= 0;
 		this.field[this.positionRow][this.positionCol] = pathCharacter;
 	}
+
+	//----Step 1 สร้างเงื่อนไขการเดิน
+	askformove(){
+		const move = prompt('Which way : (A:left, D:right, W:up, S:down')
+	}
+
+
+
+
 
 	// Print field //
 	print() {
 		clear();
-
-		// Replace with your own code //
-		console.log(this.field); // Please REMOVE this line before you start your code!
+		this.print()
 	}
 
 	// Your Code //
